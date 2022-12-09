@@ -1,44 +1,85 @@
-body{
-  margin: 0%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.bar{
-    display: flex;
-    list-style: none;
-    
-    justify-content: center;
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
-    inline-size: 100%;
-    overflow: hidden;
-    position: fixed;
-    block-size: 90px;
 
- 
+body {
+  font-family: sans-serif;
 }
-.link{
 
-    text-decoration: none;
-   block-size: 60px;
-    font-size: 30px;
-    color: rgb(21, 21, 20);
-    background-color: rgb(243, 235, 243);
-   padding: 10px;
-   margin: 10px;
-    
-    
+.bar {
+  display: flex;
+  list-style: none;
+
+  justify-content: center;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  overflow: hidden;
+  position: fixed;
+  block-size: 90px;
+  top: 0;
 
 }
-.link:hover{
-background-color: aliceblue;
+
+.link {
+
+  text-decoration: none;
+  block-size: 60px;
+  font-size: 30px;
+  color: rgb(21, 21, 20);
+  background-color: rgb(243, 235, 243);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+
+
 }
-#store{
-  margin-inline-end: 450px;
+
+.link:hover {
+  background-color: aliceblue;
 }
-.fxed{
+
+#store {
+  margin-right: 300px;
+  color: white;
+}
+
+.fxed {
   padding: 16px;
   margin-block-start: 30px;
   block-size: 1500px
 }
 
-   
+
+/* -------------------heading in center  */
+.Heading {
+  margin-top: 105px;
+  width: 75%;
+  margin: auto;
+  margin-top: 103px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+
+/* ---------------paragrapA Desings -------------- */
+.paragraphsA {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.paragraphsA p {
+  /* height: 10px; */
+  /* display: block; */
+  height: 55px;
+  background-color: gainsboro;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
