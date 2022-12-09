@@ -32,6 +32,13 @@ body{
 .link:hover{
 background-color: aliceblue;
 }
-
+#store{
+  margin-inline-end: 450px;
+}
+.fxed{
+  padding: 16px;
+  margin-block-start: 30px;
+  block-size: 1500px
+}
 
    
