@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="Extra/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        .heading{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bg-info p-2 w-75 m-auto mt-3 rounded">Here is the use of loop in java script</h1>
+    
+    <label class="d-block w-25 m-auto mt-3" for="Value">Enter Value you wnat to manuplute</label>
+    <input class="d-block w-25 m-auto mt-2"type="text" id="Value">
+   
+    <div class="container">
+        <h4>You will see that automaticlly javacript wil Generate Elements acording to the
+            specified value</h4>
+            <button class="btn btn-primary">Click Me</button>
+            <button class="btn2 btn btn-primary">Click Me To Make the Box Flex</button>
+            <button class="btn3 btn btn-primary">Click To Change Style</button>
+        <div class="Result border">
+
+        </div>
+    </div>
+
+    <script>
+        let btn =document.querySelector(".btn");
+        let Result =document.querySelector(".Result");
+        
+        // let b = document.createElement("h1");
+        // b.innerHTML= "hello";
+        btn.addEventListener("click",(e)=>{
+           Result.innerHTML += "<h1>Hello<h1>"
+        })
+
+        document.querySelector(".btn2").addEventListener("click",(e)=>{
+           Result.classList.add("d-flex");
+           Result.classList.add("flex-wrap");
+        })
+
+        document.querySelector(".btn3").addEventListener("click",(e)=>{
+            document.querySelectorAll(".Result h1").forEach((e)=>{
+                e.classList.add("heading");
+            })
+        })
+
+    </script>
+</body>
+</html>
