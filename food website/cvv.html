@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-block-size: 100vh;background: black;
+            flex-direction: column;
+            gap: 50px;
+
+        }
+        button{
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+            width: 160px;
+            height: 60px;
+            background: linear-gradient(45deg, rgb(88, 88, 222), rgb(222, 71, 96));
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 22px;
+            color: aliceblue;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        button::before{
+            content: '';
+            position: absolute;
+            inset-block-start: 0;
+            inset-inline-start: 0;
+            border-width: 0;
+            border: solid;
+            border-color: black gray gray black;
+            box-shadow: 1px 1px 5px black;
+            border-end-start-radius: 5px;
+            transform: 1.7s ease-out;                                             
+        }
+        button:hover::before{
+            border-width: 14px;
+        }
+        a{
+            position: relative;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+        a:hover{
+            letter-spacing: 0.25em;
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #27282c;
+        }
+        a span{
+            position: relative;
+            z-index: 1;
+        }
+        a i{
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
+        a i::before{
+            content: '';
+            position: absolute;
+            inset-block-start: -3.5px;
+            inset-inline-start: 80%;
+            inline-size: 10px;
+            block-size: 5px;
+            border: 2px solid var(--clr);
+            background: black;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+        a:hover i::before{
+            inline-size: 20px;
+            inset-inline-start: 80%;
+        }
+        a i::after{
+            content: '';
+            position: absolute;
+            inset-block-end: -3.5px;
+            inset-inline-start: 80%;
+            inline-size: 10px;
+            block-size: 5px;
+            border: 2px solid var(--clr);
+            background: black;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+        a:hover i::after{
+            inline-size: 20px;
+            inset-inline-start: 20%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Button</button>
+    <button>Button 2</button>
+    
+    <a href="#" style="--clr:#1e9bff"><span>Link1</span><i></i> </a>
+    <a href="#" style="--clr:#ff1867"><span>Link1</span><i></i> </a>
+    <a href="#" style="--clr:#6eff3e"><span>Link1</span><i></i> </a>
+    <a href="#" style="--clr:#94ff3b"><span>Link1</span><i></i> </a>
+</body>
+</html>

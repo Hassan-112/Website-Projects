@@ -5,9 +5,13 @@
 }
 .main{
     display: flex;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     text-decoration: none;
-    
+    background-color: aquamarine;
+color: aliceblue;
+height: 100px;
 }
 .main li{
     margin: 20px;
@@ -22,18 +26,17 @@
    align-items: flex-end;
    text-decoration: none;
 }
-.main{
-background-color: aquamarine;
-color: aliceblue;
+.nav{
+    margin-left: 60px;
 }
 a{
     text-decoration: none;
 }
 .container{
-    background-image: url("asdfg.jpg");
+    background-image: url("d.jpg");
     background-repeat: no-repeat;
  
-    background-size: 100% 800px;
+    background-size: 100% 900px;
     
     
 
@@ -80,7 +83,7 @@ img{
     text-align: center;
     font-family: arial;
     margin-bottom: 50px;
-    padding: 18px;
+    padding: 10px;
     margin-left: 20px;
   }
   .price {
@@ -105,8 +108,61 @@ img{
   }
   .card:hover{
     scale: 1.04;
-    box-shadow:  2px 1px #888888;
+    box-shadow:  1px 1px 1px 1px #888888;
   }
   .cards{
     display: flex;
+  }
+  .box2{
+    width: 100%;
+    height: 300px;
+  
+    background-color: rgb(46, 28, 28);
+    color: aliceblue;
+    display: flex;
+  }
+  .c1{
+    margin: 30px;
+    width: 300px;
+  }
+  h3{
+    padding: 10px;
+   
+  }
+  p{
+    margin-top: 20px;
+  }
+  #ullist{
+    padding: 10px;
+    list-style: circle;
+  }
+  #ullist li{
+    margin: 10px;
+  }
+  .main li{
+    
+    text-transform: uppercase;
+  }
+  .nav a:hover{
+    border: 1px solid black;
+
+  }
+  #unique{
+    font-size: 2rem;
+  }
+  #deals{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: #888888;
+    border-radius: 20px;
+margin-left: 50%;
+
+font-size: 1.5rem;
+padding: 8px;
+margin-bottom: 20px;
+color: #000;
+  }
+  #deals:hover{
+    scale: 1.08;
+    background: transparent;
   }

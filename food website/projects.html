@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background: linear-gradient(rgb(173, 168, 159), gray);
+        }
+        a{
+            margin: 30px;
+            position: relative;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            padding: 10px 30px;
+            transition: 0.5s;
+            
+        }
+        a:hover{
+            letter-spacing: 0.25em;
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #27282c;
+        }
+        a span{
+            position: relative;
+            z-index: 1;
+        }
+        a i{
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
+        a i::before{
+            content: '';
+            position: absolute;
+            inset-block-start: -3.5px;
+            inset-inline-start: 80%;
+            inline-size: 10px;
+            block-size: 5px;
+            border: 2px solid var(--clr);
+            background: black;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+        a:hover i::before{
+            inline-size: 20px;
+            inset-inline-start: 80%;
+        }
+        a i::after{
+            content: '';
+            position: absolute;
+            inset-block-end: -3.5px;
+            inset-inline-start: 80%;
+            inline-size: 10px;
+            block-size: 5px;
+            border: 2px solid var(--clr);
+            background: black;
+            transform: translateX(-50%);
+            transition: 0.5s;
+        }
+        a:hover i::after{
+            inline-size: 20px;
+            inset-inline-start: 20%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="magicnavmenu.html" style="--clr:#1e9bff"><span>Menu1</span><i></i> </a>
+    <a href="menu.html" style="--clr:#ff1867"><span>Menu2</span><i></i> </a>
+</body>
+</html>
