@@ -20,7 +20,10 @@
             margin: 10px;
             border: 1px solid gray;
             border-radius: 5px;
-
+            cursor: pointer;
+        }
+        .heading:hover{
+            background-color: grey;
         }
     </style>
 </head>
@@ -101,6 +104,12 @@
             console.log("n");
 
 
+        })
+
+
+        Result.addEventListener("click",(e)=>{
+            console.log(e.target);
+            e.target.remove();
         })
 
     </script>
