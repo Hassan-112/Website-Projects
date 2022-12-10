@@ -32,7 +32,9 @@ a{
 .container{
     background-image: url("asdfg.jpg");
     background-repeat: no-repeat;
+ 
     background-size: 100% 800px;
+    
     
 
 }
@@ -47,6 +49,64 @@ h1{
     margin-bottom: 50px;
 }
 .text{
-    padding: 100px;
+    padding: 10px;
     text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: larger;
 }
+img{
+    opacity: 0.5;
+}
+#menu-btn{
+    border: 1px solid red;
+    background: linear-gradient(rgb(18, 18, 17), rgb(103, 103, 101));
+    height: 40px;
+    width: 150px;
+    color: rgb(237, 233, 228);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    font-weight: 300;
+    cursor: pointer;
+}
+#menu-btn:hover{
+    background: linear-gradient(orange, purple);
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 50px;
+    padding: 18px;
+    margin-left: 20px;
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  .card:hover{
+    scale: 1.04;
+    box-shadow:  2px 1px #888888;
+  }
+  .cards{
+    display: flex;
+  }
