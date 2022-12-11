@@ -22,7 +22,8 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .heading:hover{
+
+        .heading:hover {
             background-color: grey;
         }
     </style>
@@ -37,9 +38,9 @@
     <div class="container">
         <h4>You will see that automaticlly javacript wil Generate Elements acording to the
             specified value</h4>
-        <button class="btn btn-primary">Click Me</button>
-        <button class="btn2 btn btn-primary">Click Me To Make the Box Flex</button>
-        <button class="btn3 btn btn-primary">Click To Change Style</button>
+        <button class="btn  m-2 btn-primary">Click Me</button>
+        <button class="btn2 m-2  btn btn-primary">Click Me To Make the Box Flex</button>
+        <button class="btn3 m-2  btn btn-primary">Click To Change Style</button>
         <div class="Result border">
 
         </div>
@@ -82,23 +83,23 @@
                     e.classList.add("heading");
 
                 }
-                if (clicked2 == true) {
+                else {
                     e.classList.remove("heading");
                     // clicked2=false;
 
 
                 }
-                
+
             })
             if (clicked2 == false) {
-                
-                clicked2=true;
+
+                clicked2 = true;
             }
-            else{
-                clicked2=false;
+            else {
+                clicked2 = false;
 
             }
-            
+
             // clicked2=true;
             // clicked2=true;
             console.log("n");
@@ -107,9 +108,21 @@
         })
 
 
-        Result.addEventListener("click",(e)=>{
+        Result.addEventListener("click", (e) => {
             console.log(e.target);
-            e.target.remove();
+            if (e.target == Result) {
+                // debugger;
+                let a = confirm("Do you want to delet main container");
+                if (a == true) {
+
+                    e.target.remove();
+                }
+                // console.log(a.);
+            }
+            else {
+
+                e.target.remove();
+            }
         })
 
     </script>
