@@ -32,6 +32,7 @@
 }
 a {
   text-decoration: none;
+  color: white;
 }
 .container {
   background-image: url("asdfg.jpg");
@@ -174,4 +175,11 @@ p {
 }
 #menu-btn a {
   color: white;
+}
+#mainheading{
+  font-size: 3rem;
+  background-color: #888888;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
 }
