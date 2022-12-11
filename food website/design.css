@@ -12,6 +12,7 @@
   background-color: aquamarine;
   color: aliceblue;
   height: 100px;
+
 }
 .main li {
   margin: 20px;
@@ -56,8 +57,9 @@ h1 {
   padding: 10px;
   text-align: center;
   color: white;
-  font-weight: 300;
+  font-weight: bolder;
   font-size: larger;
+  color: #000;
 }
 img {
   opacity: 0.5;
@@ -75,8 +77,12 @@ img {
   cursor: pointer;
 }
 #menu-btn:hover {
-  background: linear-gradient(orange, purple);
+  background: transparent;
+color: #2cee0a;
+font-size: 1rem;
+border: 2px solid red;
 }
+ 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 260px;
@@ -182,4 +188,7 @@ p {
   width: fit-content;
   margin: auto;
   margin-top: 20px;
+}
+.deals a{
+  color: black;
 }
