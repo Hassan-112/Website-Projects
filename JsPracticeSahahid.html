@@ -46,6 +46,67 @@
         </div>
     </div>
 
+    <section class="mt-5" id="boxModel">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-md-6 col-12">
+                    <h1>Box moddel in in html</h1>
+                    <p>you can understand box model and dsign it here. letst first talk about
+                        <br>margin ,padding border and box iside try to understand by loking the box model
+                        picture
+                    </p>
+                    <hr>
+                    <!-- --actions to perform on box model -->
+                    <div class="buttons ">
+                        <style>.buttons button{width: 20%;}</style>
+                        <button class="btn btn-info p-2 text-white">Margin</button>
+                        <button class="btn btn-info p-2 text-white">Padding</button>
+                        <button class="btn btn-info p-2 text-white">Width</button>
+                        <button class="btn btn-info p-2 text-white">Hight</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 d-flex justify-content-center">
+                    <style>.margin{width: 200px; height: 200px;}</style>
+                    <div class="margin">
+                        <div class="box border m-auto text-center">
+                            <div class="padding">
+                                box
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        /* ---box Model showing */
+                        .margin{
+                            background-color: lightcoral;
+                            --margin:25px;
+                            --padding:50px;
+                            --border:1px solid black;
+                            /* border: var(--border); */
+                            display: flex;
+                            padding: 25px;
+                        }
+                        .box{
+                            background-color: gray;
+                            /* padding: 5px red; */
+                            width: 100%;
+                            height: 100%;
+                            padding: 25px;
+                            /* margin: var(--padding); */
+                            /* z-index: 50; */
+                        }
+                        .padding{
+                            background-color: lightgreen;
+                            width: 100%;
+                            height: 100%;
+                            /* padding: ; */
+                            /* z-index: 0; */
+                            /* padding: 5px; */
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         let btn = document.querySelector(".btn");
         let Result = document.querySelector(".Result");
