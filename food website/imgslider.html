@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+    ">
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 550px;
+        width: 900px;margin-top: 100px;
+    }
+    .pictures img {
+        height: 100%;
+        width: 100%;
+    }
+    .slides{
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .slides span{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        border: 5px solid rgb(246, 243, 243);
+        cursor: pointer;
+        margin: 0 30px;
+    }
+    .slides span:hover{
+        background-color: red;
+    }
+    .slide{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        background-color: red;
+        cursor: pointer;
+        border: 2px solid #fff;
+    }
+    .slide span{
+        font-size: 34px;
+        color: #fff;
+    }
+    right{
+right: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="pictures">
+            <img src="asdf.jpg" alt="">
+            <img src="asdfg.jpg" alt="">
+            <img src="b.jpg" alt="">
+            <img src="d.jpg" alt="">
+            <img src="c.jpg" alt="">
+        </div>
+        <div class="slides">
+            <span onclick="slides(1)"></span>
+            <span onclick="slides(2)"></span>
+            <span onclick="slides(3)"></span>
+            <span onclick="slides(4)"></span>
+            <span onclick="slides(5)"></span>
+        </div>
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fas fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fas fa-angle-right"></span>
+        </div>
+    </div>
+    <script>
+        let firstImage=1;
+        slideShow=(firstImage);
+        function slides(e){
+            slideShow(firstImage=e);
+        }
+
+        function side_slide(e){
+            slideShow(firstImage += e);
+        }
+        function slideShow(e){
+            var i;
+            const img=document.querySelectorAll('img');
+            if(e > img.length){
+                firstImage = 1
+            }
+            if(e<1){
+                firstImage=img.length
+            }
+            for(i=0;i<img.length;i++){
+                img[i].style.display="none";
+            }
+            img[firstImage-1].style.display="block";
+        }
+    </script>
+</body>
+</html>

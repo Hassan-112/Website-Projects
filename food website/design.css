@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(243, 241, 238);
+}
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +21,9 @@ body{
   /* height: 100px; */
   height: 66px;
 
+}
+.card img{
+  border: 1px solid rgba(0, 0, 0, 0.411);
 }
 .main li {
   margin: 20px;
@@ -95,9 +101,9 @@ border: 2px solid red;
   text-align: center;
   font-family: arial;
   margin-bottom: 50px;
-  padding: 5px;
-  margin-left: 20px;
-  background-color: #515751;
+  padding: 15px;
+  margin-left: 40px;
+  background-color: #f8fdf8;
 }
 .price {
   color: grey;
@@ -109,7 +115,7 @@ border: 2px solid red;
   outline: 0;
   padding: 10px;
   color: white;
-  background-color: #000;
+  background-color: rgb(243, 31, 31);
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -121,14 +127,18 @@ h1 {
   margin-top: 4px;
 }
 .card:hover {
-  scale: 1.02;
-  box-shadow: 1px 1px 1px 1px #888888;
+  
+  
+  
+  border: 2px solid rgb(227, 13, 13);
+  border-radius: 2px;
+  box-shadow: rgb(176, 67, 67);
   
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
- margin-left: 45px;
+ margin-left: auto;
 }
 .box2 {
   width: 100%;
@@ -164,7 +174,7 @@ p {
 #unique {
   font-size: 2rem;
 }
-.deals {
+.link {
   display: inline-block;
   text-decoration: none;
   border: 1px solid black;
@@ -178,10 +188,7 @@ p {
   color: #000;
   
 }
-.deals:hover {
-  scale: 1.04;
-  background: transparent;
-}
+
 .text p {
   font-size: 2rem;
 }
@@ -197,6 +204,78 @@ p {
   border-radius: 4px;
   color: gray;
 }
-.deals a{
-  color: black;
+
+
+
+
+
+
+
+
+
+
+
+.link{
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.link:hover{
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+}
+.link::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #27282c;
+}
+.link span{
+  position: relative;
+  z-index: 1;
+}
+.link i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.link i::before{
+  content: '';
+  position: absolute;
+  inset-block-start: -3.5px;
+  inset-inline-start: 80%;
+  inline-size: 10px;
+  block-size: 5px;
+  border: 2px solid var(--clr);
+  background: black;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.link:hover i::before{
+  inline-size: 20px;
+  inset-inline-start: 80%;
+}
+.link i::after{
+  content: '';
+  position: absolute;
+  inset-block-end: -3.5px;
+  inset-inline-start: 80%;
+  inline-size: 10px;
+  block-size: 5px;
+  border: 2px solid var(--clr);
+  background: black;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.link:hover i::after{
+  inline-size: 20px;
+  inset-inline-start: 20%;
 }
