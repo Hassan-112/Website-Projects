@@ -3,15 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: sans-serif;
+}
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
   text-decoration: none;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  background-color: #6e35ae;
   color: aliceblue;
-  height: 100px;
+  /* height: 100px; */
+  height: 66px;
 
 }
 .main li {

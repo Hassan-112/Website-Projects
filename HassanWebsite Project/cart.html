@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .container{
+            background-color: grey;
+            padding: 30px;
+            margin: 45px;
+            height: 75vh;
+            display: flex;
+        }
+        #a{
+            width: 70%;
+            position: relative;
+            padding: 32px;
+            background-color: white;
+            border-top-left-radius: 8px;
+           
+        }
+        #b{
+            width: 30%;
+            background-color: rgb(179, 174, 174);
+            border-top-right-radius: 8px;
+            display: flex;
+            flex-direction: column;
+           padding: 33px;
+            gap: 17px;
+        }
+        #select{
+            width: 275px;
+            height: 38px;
+            padding: 8px;
+        }
+        #selec{
+            width: 260px;
+            height: 20px;
+            padding: 8px;
+        }
+        #btn{
+            width: 270px;
+            height: 35px;
+            padding: 7px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        #back{
+            position: absolute;
+             bottom: 0;
+              left: 0;
+              margin-left: 50px;
+              margin-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="a">
+            <h1>Shopping Cart</h1>
+
+
+            <p id="back"><i>&#129056;
+            </i> Back to shop</p>
+        </div>
+        <div id="b">
+            <h1>Summary <hr style="margin-top: 10px;color:black"></h1>
+            
+            <h4 style="font-family: 'Courier New', Courier, monospace;">ITEMS <span></span></h4>
+            <h4 style="font-family: 'Courier New', Courier, monospace;">SHIPPING</h4>
+            <select name="" id="select">
+                <option value="">Hi</option>
+                <option value="">Hi</option>
+                <option value="">Hi</option>
+                <option value="">Hi</option>
+            </select>
+            <h4>GIVE CODE</h4>
+            <div><input type="password" id="selec" > <hr style="margin-top: 10px;color:black"></div>
+            
+            
+            <h4> TOTAL PRICE <span></span></h4>
+            <button id="btn">CHECKOUT</button>
+        </div>
+    </div>
+</body>
+</html>

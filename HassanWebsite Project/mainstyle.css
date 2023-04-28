@@ -1,0 +1,234 @@
+
+      
+        .menu-top {
+            display: flex;
+            gap: 40px;
+            margin-left: 80px;
+            font-size: smaller;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .menu-top-left {
+            display: flex;
+            gap: 30px;
+            margin-left: 300px;
+
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .menu {
+
+            display: flex;
+            margin-top: 12px;
+            gap: 100px;
+
+        }
+
+        .icons-2-bar {
+            display: flex;
+            margin-left: 30px;
+            gap: 40px;
+        }
+
+        .menu-2 {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 17px;
+            margin-bottom: 14px;
+            font-size: small;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+
+        .menu-2 :nth-child(1) {
+            gap: 200px;
+        }
+
+        #logo {
+            margin-left: 80px;
+            font-size: 1.6rem;
+            margin-right: 80px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #black {
+            margin-top: 20px;
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+
+        #shop-now {
+            margin-left: 8px;
+            color: antiquewhite;
+            text-decoration: none;
+            font-size: 1rem;
+            border: none;
+            border-bottom: 2px solid antiquewhite;
+            padding-bottom: 2px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        #shop-now:hover {
+            border-bottom: none;
+            background-color: rgb(200, 206, 206);
+            padding: 2px;
+        }
+
+        .menu-2-left :hover {
+
+            border-bottom: 3px solid red;
+            padding-bottom: 2px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+
+            background-image: url(pics/h.jpg);
+            background-size: 100% 400px;
+
+
+
+            font-weight: bolder;
+        }
+
+        .inner {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        body {}
+
+        .cards {
+
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            height: 200px;
+            width: 250px;
+
+
+
+        }
+
+        .footer-menu {
+            background-color: rgb(45, 41, 38);
+            height: 90px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            color: rgb(121, 143, 157);
+        }
+
+        #btn-1 {
+
+            background-color: black;
+            color: white;
+            margin-top: 50px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-right: 280px;
+
+        }
+
+        .menu-2-left {
+            font-size: 0.8rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .cards :nth-child(1) {
+
+            background-image: url(pics/boy-colle.jpg);
+            background-repeat: no-repeat;
+            background-size: 250px 250px;
+            text-decoration: none;
+            color: antiquewhite;
+            border: 1px solid black;
+
+        }
+
+        .cards :nth-child(2) {
+
+            background-image: url(pics/girl-collecti.jpg);
+            background-repeat: no-repeat;
+            background-size: 250px 250px;
+            text-decoration: none;
+            color: antiquewhite;
+            border: 1px solid black;
+
+        }
+
+        .icons-2:hover {
+            scale: 1.2;
+        }
+
+        .cards :nth-child(3) {
+            border: 1px solid black;
+            background-image: url(pics/baby-collec.jpg);
+            background-repeat: no-repeat;
+            background-size: 250px 250px;
+            text-decoration: none;
+            color: antiquewhite;
+
+        }
+
+        .fashion {
+            margin-top: 180px;
+            margin-left: 100px;
+        }
+
+        #b {
+            margin-right: 350px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        #myInput {
+
+            height: 22px;
+            width: 110px;
+
+
+            border: 1px solid #ddd;
+            margin-left: 15px;
+            padding: 4px
+        }

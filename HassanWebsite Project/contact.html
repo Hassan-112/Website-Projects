@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            display: flex;
+            gap: 180px;
+            
+            margin-top: 70px;
+        }
+        .input{
+            height: 30px;
+            width: 200px;
+            margin: 15px;
+        }
+        .c  {
+            margin-left: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 400px;
+        }
+    
+        .input{
+            border: 1px solid black;
+           
+            
+            
+            height: 40px;
+            width: 300px;
+            margin-top: 7px;
+            
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .label{
+            
+            display: flex;
+            margin-left: 20px;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(37, 35, 31);
+            border-radius: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        #submit{
+            background-color: rgb(121, 113, 225);
+            border: none;
+            color: whitesmoke;
+            width: 120px;
+            height: 37px;
+            text-decoration: none;
+            padding: 5px;
+            
+            margin-left: 15px;
+        }
+        #p{
+            margin-top: 30px;
+        }
+        #span{margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/0c2aa7fbe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="main">
+        <div class="c">
+            <h1>Contact Us</h1>
+            <p id="p">Follow us contact us on instagram we will help you in every sit
+                uation influenced by other compabires we yfbf svd
+            </p>
+            <div id="span">
+            <span><i class="fa-brands fa-facebook"></i>34 Street near Hamid Colony Pakistan</span>
+            <span><p>+923434833</p></span>
+            <span><p>Hello world</p></span></div>
+        </div>
+        <div style="display: flex;flex-direction:column">
+            <form action="">
+            <label class="label" for="name">Name</label>
+            <input class="input" type="text" name="name">
+            <label class="label" for="email">Email</label>
+            <input class="input" type="text" name="email">
+            <label class="label" for="message">Message</label>
+            <input class="input" type="text" name="message" style="height: 140px; "><br>
+            <input   type="submit" id="submit" value="send message">
+        </form>
+        </div>
+    </div>
+</body>
+</html>

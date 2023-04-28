@@ -250,6 +250,73 @@
         </p>
         <p><button><a href="ordernow.html">Add to Cart</a></button></p>      </div>
     </div>
+
+
+    <!-- css for Bill Generator -->
+    <style>
+      .billGenerator{
+        /* position: absolute; */
+        border: 1px solid gray;
+        margin: 5px;
+        margin-bottom: 15px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .billGenerator .head{
+        background: #000;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+      }
+      .billGenerator .products{
+        
+      }
+    </style>
+    <!-- Bill Generator Popup -->
+    <div class="billGenerator">
+      <h1 class="head">Bill</h1>
+      <div class="products">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quanity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+          <tr class="Details">
+            <td>Yammy Food</td>
+            <td>5000</td>
+            <td>12</td>
+            <td>600</td>
+            <td>X</td>
+          </tr>
+          <tr class="Details">
+            <td>Yammy Food</td>
+            <td>5000</td>
+            <td>12</td>
+            <td>600</td>
+            <td>X</td>
+          </tr>
+          <tr class="Details">
+            <td>Yammy Food</td>
+            <td>5000</td>
+            <td>12</td>
+            <td>600</td>
+            <td>X</td>
+          </tr>
+        </table>
+    
+      </div>
+      <div class="total">
+        <div class="grandT"><h1>Grand Totoal</h1> <h1>5000</h1></div>
+        <button>checkout</button>
+      </div>
+    </div>
+
     <script>
       window.onload = function () {
           var url = document.location.href,

@@ -1,0 +1,126 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #head{
+                height: 120px;
+                background-color: azure;
+            }
+            #main{
+
+                display: flex;
+                justify-content: center;
+                background-color: antiquewhite;
+                padding: 90px;
+                gap: 45px;
+
+            }
+            .div1{
+                display: flex;
+                flex-direction: column;
+                gap: 45px   ;
+            }
+            .div4{
+                display: flex;
+                flex-direction: column;
+                gap: 45px   ;
+            }
+            .div2{
+                height: 250px;
+                width: 700px;
+               
+                gap: 25px;
+                background-color: black;
+            }
+            #centre-div{
+                height: 545px;
+                width: 700px;
+                background-color: blue;
+            }
+            #divdown{
+                display: flex;
+                justify-content: center;
+                
+                gap: 45px;
+            }
+            .div3{
+                width: 700px;
+                height: 350px;
+                background-color: antiquewhite;
+            }
+            .down{
+                padding: 60px;
+            }
+            #divdown :nth-child(1) {
+                background-image: url(aa.jpg);
+                background-size: 700px 350px;
+            }
+            #divdown :nth-child(2) {
+                background-image: url(aa.jpg);
+                background-size: 700px 350px;
+            }
+            #divdown :nth-child(3) {
+                background-image: url(aa.jpg);
+                background-size: 700px 350px;
+            }
+            .div1 :nth-child(1) {
+                background-image: url(aa.jpg);
+                background-size: 700px 250px;
+            }
+            .div1 :nth-child(2) {
+                background-image: url(aa.jpg);
+                background-size: 700px 250px;
+            }
+            .div4 :nth-child(1) {
+                background-image: url(aa.jpg);
+                background-size: 700px 350px;
+            }
+            .div4 :nth-child(2) {
+                background-image: url(aa.jpg);
+                background-size: 700px 350px;
+            }
+            #centre-div {
+                background-image: url(aa.jpg);
+                background-size: 700px 545px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="head"></div>
+        <div id="main">
+            <div class="div1">
+                <div  class="div2"></div>
+                <div  class="div2"></div>
+            </div>
+            <div id="centre-div"></div>
+            <div class="div4">
+                <div  class="div2"></div>
+                <div  class="div2"></div>
+            </div>
+        </div>
+        <div class="down">
+        <h1 style="margin-bottom: 60px;margin-left: 100px; ">Recent Posts</h1>
+
+        <div id="divdown">
+
+            
+                <div  class="div3"></div>
+                <div  class="div3"></div>
+                <div  class="div3"></div>
+
+        </div>
+    </div>
+
+
+
+    </body>
+    </html>
